@@ -21,6 +21,8 @@
 2. Create venv for use with your virtual enviroment
 3. install requirements.txt
 4. Launch main.py with imput parameters requirements
+
+
    4.1 --help
 
    ```python
