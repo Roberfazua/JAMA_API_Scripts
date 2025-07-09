@@ -8,7 +8,7 @@ Editor: Roberto Madero
 
 <h2> INFO </h2>
 
-The scripts in this folder are used to get and connect with the JAMA API from Porsche Ebike Performance and log in Json and CSV files the request
+Scripts in this folder are used to get and connect with the JAMA API from Porsche Ebike Performance and log in Json and CSV files the request
 
 
 <h2> SPECIFICATIONS  & REQUIREMENTS </h2>
