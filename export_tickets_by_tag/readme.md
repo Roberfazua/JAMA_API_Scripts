@@ -1,15 +1,22 @@
 # Export_tickets_by_tag
 
 <h2>IMPUTS</h2>
+
 - TAG -> Jama is case sensitive, but with some error handling the script handle it
-- TAG-FILE -> If you already have a tag list you want to compare and search
+- TAGSFILE -> If you already have a tag json list you want to compare and search
+
+
 
 <h2>This scripts export:</h2>
+
 - Project list (json)
 - Tags in project "Porche ebike" (id_project = 55) (json)
 - Tickets related with this IMPUT tag (json and csv)
 
+
+
 <h2>HOW TO</h2>
+
 1. Update the env.py with your own credentials
 2. Create venv for use with your virtual enviroment
 3. install requirements.txt
