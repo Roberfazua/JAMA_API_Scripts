@@ -4,7 +4,7 @@ Collection of Jama Scripts for Process Tools Dept.
 
 Ownership: Process tools
 
-Editor: Roberto Madero
+Code: Roberto Madero
 
 <h2> INFO </h2>
 
