@@ -1,5 +1,5 @@
 # env.py
-# How to get this data check:
+# How to get this data:
 # https://porsche-ep.atlassian.net/wiki/spaces/TEAMPROCESS/pages/3842670598/JAMA+-+API+-+Automatization#API-RES-CREDENTIALS-CREATION
 
 JAMA_SUBDOMAIN = "porscheebike"
