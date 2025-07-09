@@ -1,0 +1,1011 @@
+{
+	"info": {
+		"_postman_id": "59e261ad-fa85-45c4-bf1e-a7200e020eb0",
+		"name": "JAMA",
+		"description": "JAMA Swager UI - {{base_url}}api-docsEndFragment\n\n[https://porscheebike.jamacloud.com/api-docs](https://porscheebike.jamacloud.com/api-docs)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34285467"
+	},
+	"item": [
+		{
+			"name": "jama-Current User Req",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"strictSSL": false,
+				"protocolVersion": "auto"
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{vault:TOKEN_JAMA}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}rest/latest/users/current",
+					"host": [
+						"{{base_url}}rest"
+					],
+					"path": [
+						"latest",
+						"users",
+						"current"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "jama-Current User Req",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{vault:TOKEN_JAMA}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}rest/latest/users/current",
+							"host": [
+								"{{base_url}}rest"
+							],
+							"path": [
+								"latest",
+								"users",
+								"current"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": ":status",
+							"value": 200
+						},
+						{
+							"key": "date",
+							"value": "Thu, 03 Jul 2025 17:43:03 GMT"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-length",
+							"value": "337"
+						},
+						{
+							"key": "server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "jamafishtag",
+							"value": "{\"originHost\":\"jamacore-khfxu72x-ip-10-56-12-126\",\"originUUID\":\"58a800fca03346d6\",\"tenantId\":null,\"breadCrumbDTOs\":[]}"
+						},
+						{
+							"key": "x-jama-node",
+							"value": ""
+						},
+						{
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "set-cookie",
+							"value": "jamaContourServerTime=1751564583774; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "set-cookie",
+							"value": "jamaContourSessionExpiry=1751564583774; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "GET, POST, DELETE, PUT, OPTIONS"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "Content-Type, Accept, Authorization, api_key"
+						},
+						{
+							"key": "sunset",
+							"value": "Fri, 22 May 2020 00:00:00 GMT"
+						},
+						{
+							"key": "x-sunset",
+							"value": "Fri, 22 May 2020 00:00:00 GMT"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache,no-store"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"status\": \"OK\",\n        \"timestamp\": \"2025-07-03T17:43:03.807+0000\"\n    },\n    \"links\": {},\n    \"data\": {\n        \"id\": 101,\n        \"username\": \"roberto.madero@porsche-ep.com\",\n        \"firstName\": \"Roberto\",\n        \"lastName\": \"Madero\",\n        \"email\": \"roberto.madero@porsche-ep.com\",\n        \"phone\": \"\",\n        \"title\": \"\",\n        \"location\": \"\",\n        \"licenseType\": \"NAMED\",\n        \"active\": true,\n        \"uid\": \"u101\",\n        \"customData\": [],\n        \"type\": \"users\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "jama-check apii-docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}api-docs",
+					"host": [
+						"{{base_url}}api-docs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "jama-check Token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}api-docs",
+							"host": [
+								"{{base_url}}api-docs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 30 Jun 2025 08:03:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2422"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "jamaFishTag",
+							"value": "{\"originHost\":\"jamacore-khfxu72x-ip-10-56-11-184\",\"originUUID\":\"d2b077ab2abc4b52\",\"tenantId\":null,\"breadCrumbDTOs\":[]}"
+						},
+						{
+							"key": "x-jama-node",
+							"value": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Expires",
+							"value": "now"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourServerTime=1751270638534; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourSessionExpiry=1751270638534; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-US"
+						}
+					],
+					"cookie": [],
+					"body": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <title>Login - Jama Software</title>\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"/themes/contour/css/login-flow.css?v=39bab53\">\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png?v=39bab53\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png?v=39bab53\">\n        <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png?v=39bab53\">\n        <link rel=\"mask-icon\" href=\"/img/jama-logo-safari-pinned-tab.svg?v=39bab53\" color=\"#00A9E0\">\n        <meta name=\"theme-color\" content=\"#ffffff\">\n        <meta name=\"viewport\" content=\"width=device-width\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />\n        <meta name=\"robots\" content=\"noindex\" />\n        <!--[if IE]>\n        <style>.j-auth-mode-notification {display:inline;}</style>\n        <![endif]-->\n        <meta name=\"robots\" content=\"noindex\" />\n        <body>\n            <main id=\"container\">\n                <div class=\"login-container\">\n                    <div class=\"login-form\">\n                        <header id=\"j-homescreen-header\" aria-label=\"Jama Login\">\n                            <img id=\"j-homescreen-logo\" src=\"/img/jama-logo-fit.svg?v=39bab53\" alt=\"Jama logo\"/>\n                        </header>\n                        <form\n                    aria-label=\"login\"\n                    id=\"loginForm\"\n                    name=\"loginForm\"\n                    action=\"/j_acegi_security_check\"\n                    autocomplete=\"off\"\n                    onsubmit=\"document.getElementById('loginButton').disabled = true; return true;\"\n                    method=\"POST\">\n                            <p class=\"form-heading\" style=\"margin-top: 24px; margin-bottom: 24px;\">Sign in</p>\n                            <input type=\"hidden\" id=\"multipleAuthIsOn\" value=\"false\"/>\n                            <input  id=\"loginWithSSOButton\" name=\"submitWithSSO\" class=\"j-login-btn j-login-sso-btn\"\n                        style=\"margin:0px;\" type=\"button\" value=\"Log in with SSO\" onClick=\"handleButtonLoginSSO()\"/>\n                            <div class=\"panel-or-sso-login\" id=\"panelOrLogin\">\n                                <div style=\"border-top: 1px solid;min-width: 40%;width: 100%\"></div>\n                                <span style=\"font-weight: bold; margin-left: 8px; margin-right: 8px;\">or</span>\n                                <div style=\"border-top: 1px solid;min-width: 40%;width: 100%\"></div>\n                            </div>\n                            <fieldset>\n                                <label for=\"j_username\">Username</label>\n                                <input type=\"text\"\n                           id=\"j_username\"\n                           name=\"j_username\"\n                           autocomplete=\"off\"\n                           aria-required=\"true\"\n                            />\n                            </fieldset>\n                            <fieldset>\n                                <label for=\"j_password\">Password</label>\n                                <input type=\"password\"\n                           name=\"j_password\"\n                           autocomplete=\"off\"\n                           id=\"j_password\"\n                           title=\"Enter password\"\n                           aria-required=\"true\"\n                            />\n                            </fieldset>\n                            <div class=\"j-login-btn-ct\">\n                                <section class=\"form-help-links\">\n                                    <a href=\"/forgotPasswordForm.req\">Forgot your password?</a>\n                                </section>\n                                <input id=\"loginButton\" name=\"submit\" class=\"j-login-btn\" type=\"submit\" value=\"Sign in\"/>\n                            </div>\n                            <script>\n                    function getUsernameAttributeFromSearch() {\n                        return top.location.search && top.location.search.indexOf('?username=') === 0\n                            ? top.location.search.substr(10).split('&')[0]\n                            : null;\n                    }\n\n                    function focusOnLoginField() {\n                        if (getUsernameAttributeFromSearch()) {\n                            document.loginForm.j_password.focus()\n                        } else {\n                            document.loginForm.j_username.focus()\n                        }\n                    }\n\n                    \n                    var hrefIndex = top.location.href.indexOf(\"#\");\n                    if (hrefIndex >= 0) {\n                        document.write('\n                                <input type=\"hidden\" name=\"j_hash\" value=\"' +\n                            encodeURI(top.location.href.substr(hrefIndex + 1)) + '\"/>');\n                    }\n\n                    var userNameFromSearch = getUsernameAttributeFromSearch();\n                    var lastUserName = '';\n                    var hasError = 'null';\n                    if (lastUserName == 'null') {\n                        lastUserName = '';\n                    }\n                    if (hasError == 'null') {\n                        hasError = '';\n                    }\n                    var userName = '';\n                    if (userNameFromSearch) {\n                        userName = encodeURI(userNameFromSearch);\n                    } else if (hasError && lastUserName) {\n                        userName = lastUserName;\n                    }\n                    document.getElementById(\"j_username\").value = userName;\n\n                    var multipleAuthIsOn = document.getElementById(\"multipleAuthIsOn\").value === \"true\";\n                    var loginWithSSOButton = document.getElementById(\"loginWithSSOButton\");\n                    var loginButton = document.getElementById(\"loginButton\");\n                    var panelOrLogin = document.getElementById(\"panelOrLogin\");\n\n                    if (multipleAuthIsOn === true) {\n                        loginButton.classList.add(\"unfocused-btn\");\n                    } else {\n                        loginWithSSOButton.style.display = \"none\";\n                        panelOrLogin.style.display = \"none\";\n                    }\n\n                    document.loginForm.j_password.addEventListener('click', handleButtonLogin);\n                    document.loginForm.j_username.addEventListener('click', handleButtonLogin);\n\n                    function handleButtonLoginSSO() {\n                      document.forms['samlLogin'].submit()\n                    }\n\n                    function handleButtonLogin() {\n                        loginWithSSOButton.classList.add(\"unfocused-btn\");\n                        loginButton.classList.remove(\"unfocused-btn\");\n                    }\n                            </script>\n                        </form>\n                        <form id=\"samlLogin\" action=\"/saml/login.req\" method=\"post\">\n                            <script>\n                  \n                  var hrefIndex = top.location.href.indexOf(\"#\");\n                  if (hrefIndex >= 0) {\n                    document.write('\n                                <input type=\"hidden\" name=\"j_hash\" value=\"' +\n                      encodeURI(top.location.href.substr(hrefIndex + 1)) + '\"/>');\n                  }\n                            </script>\n                            <noscript>\n                                <div>\n                                    <input type=\"submit\" value=\"Continue\"/>\n                                </div>\n                            </noscript>\n                        </form>\n                    </div>\n                    <footer class=\"j-login-site-info\">\n                        <p class=\"j-login-copyright\">\n        &copy; 2025 Jama Software. All rights reserved. \n                            <a href=\"http://www.jamasoftware.com\">www.jamasoftware.com</a>\n                        </p>\n                        <p class=\"j-login-build-date\">Build date: 2025/06/05 14:47\n    \n    \n                            <!--\n                    <span class=\"j-login-version\">VCS Revision: 39bab53</span><br/>\n                -->\n    \n        &mdash;\n        \n                            <span class=\"j-login-version\">\n            Version: \n                                <span class=\"j-login-version-number\">Jama Connect 9.24.0</span>\n                            </span>\n                        </p>\n                    </footer>\n                    <section id=\"j-sticky-footer\">\n    Jama is designed for a minimum of 1024 &times; 768 screen resolution. Javascript MUST be enabled. For a list of supported browsers, please visit our \n                        <a href=\"https://community.jamasoftware.com/home\">support community</a>. View our\n                        <a href=\"http://www.jamasoftware.com/privacy/\" target=\"_blank\">privacy policy</a> and\n                        <a href=\"https://support.jamasoftware.com/hc/en-us/sections/30102547659533-Third-party-License-Information\" target=\"_blank\">third-party license info</a>.\n                    </section>\n                </div>\n                <div class=\"background-image-container\" />\n            </main>\n            <script>\n    focusOnLoginField();\n    \n    if (hasError) {\n        setTimeout(function () {\n            var errorMsg = document.querySelector('.j-login-error');\n            errorMsg.innerHTML = errorMsg.innerHTML;\n        }, 1);\n    }\n</script>\n        </body>\n    </html>"
+				}
+			]
+		},
+		{
+			"name": "1 - Get projects",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"pm.environment.set(\"projects\", JSON.stringify(jsonData.data));\r",
+							"pm.environment.set(\"projectIndex\", 0);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}rest/latest/projects",
+					"host": [
+						"{{base_url}}rest"
+					],
+					"path": [
+						"latest",
+						"projects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}rest/v1/projects",
+							"host": [
+								"{{base_url}}rest"
+							],
+							"path": [
+								"v1",
+								"projects"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jul 2025 12:39:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7603"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "jamaFishTag",
+							"value": "{\"originHost\":\"jamacore-khfxu72x-ip-10-56-10-70\",\"originUUID\":\"a3015b6135cf4b1e\",\"tenantId\":null,\"breadCrumbDTOs\":[]}"
+						},
+						{
+							"key": "x-jama-node",
+							"value": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourServerTime=1751632795661; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourSessionExpiry=1751632795661; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, api_key"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"status\": \"OK\",\n        \"timestamp\": \"2025-07-04T12:39:55.816+0000\",\n        \"pageInfo\": {\n            \"startIndex\": 0,\n            \"resultCount\": 20,\n            \"totalResults\": 20\n        }\n    },\n    \"links\": {\n        \"data.createdBy\": {\n            \"type\": \"users\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/users/{data.createdBy}\"\n        },\n        \"data.modifiedBy\": {\n            \"type\": \"users\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/users/{data.modifiedBy}\"\n        },\n        \"data.fields.projectGroup\": {\n            \"type\": \"picklistoptions\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/picklistoptions/{data.fields.projectGroup}\"\n        },\n        \"data.parent\": {\n            \"type\": \"projects\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/projects/{data.parent}\"\n        },\n        \"data.fields.statusId\": {\n            \"type\": \"picklistoptions\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/picklistoptions/{data.fields.statusId}\"\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 49,\n            \"isFolder\": true,\n            \"createdDate\": \"2021-04-23T18:38:30.000+0000\",\n            \"modifiedDate\": \"2021-04-23T18:38:30.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"name\": \"Agile\",\n                \"description\": \"\",\n                \"projectGroup\": 296,\n                \"statusId\": 298,\n                \"text1\": \"\"\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 48,\n            \"projectKey\": \"AGILEF\",\n            \"parent\": 49,\n            \"isFolder\": false,\n            \"createdDate\": \"2015-05-06T10:07:26.000+0000\",\n            \"modifiedDate\": \"2016-08-12T08:15:38.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"projectKey\": \"AGILEF\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Agile Framework\",\n                \"description\": \"\",\n                \"date2\": \"2015-12-30\",\n                \"projectGroup\": 296,\n                \"date1\": \"2015-08-31\"\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 46,\n            \"projectKey\": \"AGILE\",\n            \"parent\": 49,\n            \"isFolder\": false,\n            \"createdDate\": \"2015-05-06T10:07:26.000+0000\",\n            \"modifiedDate\": \"2016-08-12T08:15:38.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"projectKey\": \"AGILE\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Agile Sample Set\",\n                \"description\": \"\",\n                \"date2\": \"2015-12-30\",\n                \"projectGroup\": 296,\n                \"date1\": \"2015-08-31\"\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 53,\n            \"projectKey\": \"PEP1\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2023-06-14T08:13:46.000+0000\",\n            \"modifiedDate\": \"2023-06-14T08:13:46.000+0000\",\n            \"createdBy\": 14,\n            \"modifiedBy\": 14,\n            \"fields\": {\n                \"projectKey\": \"PEP1\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Example Project \",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 50,\n            \"isFolder\": true,\n            \"createdDate\": \"2021-04-23T18:38:52.000+0000\",\n            \"modifiedDate\": \"2021-04-23T18:40:06.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"name\": \"IIBA BABOK\",\n                \"description\": \"\",\n                \"projectGroup\": 296,\n                \"statusId\": 298,\n                \"text1\": \"\"\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 36,\n            \"projectKey\": \"BABK2\",\n            \"parent\": 50,\n            \"isFolder\": false,\n            \"createdDate\": \"2015-06-02T10:01:00.000+0000\",\n            \"modifiedDate\": \"2016-04-19T09:25:23.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"projectKey\": \"BABK2\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"IIBA BABOK Framework\",\n                \"description\": \"Configuration based on:\\nBABOK® v3\\nA GUIDE TO THE BUSINESS ANALYSIS BODY OF KNOWLEDGE® published 2015.\\nInternational Institute of Business Analysis, Toronto, Ontario, Canada.\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 24,\n            \"projectKey\": \"BABK\",\n            \"parent\": 50,\n            \"isFolder\": false,\n            \"createdDate\": \"2015-06-02T10:01:00.000+0000\",\n            \"modifiedDate\": \"2016-04-19T09:23:13.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"projectKey\": \"BABK\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"IIBA BABOK Sample Set\",\n                \"description\": \"Configuration based on:\\nBABOK® v3\\nA GUIDE TO THE BUSINESS ANALYSIS BODY OF KNOWLEDGE® published 2015.\\nInternational Institute of Business Analysis, Toronto, Ontario, Canada.\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 51,\n            \"isFolder\": true,\n            \"createdDate\": \"2021-04-23T18:39:06.000+0000\",\n            \"modifiedDate\": \"2021-04-23T18:39:06.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"name\": \"Integrated System\",\n                \"description\": \"\",\n                \"projectGroup\": 296,\n                \"statusId\": 298,\n                \"text1\": \"\"\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 37,\n            \"projectKey\": \"SYS\",\n            \"parent\": 51,\n            \"isFolder\": false,\n            \"createdDate\": \"2015-05-20T11:40:06.000+0000\",\n            \"modifiedDate\": \"2016-04-19T09:23:31.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"projectKey\": \"SYS\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Integrated System Framework\",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 18,\n            \"projectKey\": \"SYS_SOL\",\n            \"parent\": 51,\n            \"isFolder\": false,\n            \"createdDate\": \"2015-05-20T11:40:06.000+0000\",\n            \"modifiedDate\": \"2016-04-19T09:23:31.000+0000\",\n            \"createdBy\": 5,\n            \"modifiedBy\": 5,\n            \"fields\": {\n                \"projectKey\": \"SYS_SOL\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Integrated System Sample Set\",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 57,\n            \"projectKey\": \"28082023\",\n            \"isFolder\": false,\n            \"createdDate\": \"2023-08-28T08:58:37.000+0000\",\n            \"modifiedDate\": \"2023-08-28T08:58:37.000+0000\",\n            \"createdBy\": 14,\n            \"modifiedBy\": 14,\n            \"fields\": {\n                \"projectKey\": \"28082023\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"New project for demo 2\",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 60,\n            \"projectKey\": \"C\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2024-04-10T11:30:51.000+0000\",\n            \"modifiedDate\": \"2024-04-10T11:30:51.000+0000\",\n            \"createdBy\": 77,\n            \"modifiedBy\": 77,\n            \"fields\": {\n                \"projectKey\": \"C\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"OptionC\",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 52,\n            \"isFolder\": true,\n            \"createdDate\": \"2023-06-14T08:13:17.000+0000\",\n            \"modifiedDate\": \"2023-06-14T08:13:17.000+0000\",\n            \"createdBy\": 14,\n            \"modifiedBy\": 14,\n            \"fields\": {\n                \"name\": \"PEP\",\n                \"description\": \"\",\n                \"projectGroup\": 296,\n                \"statusId\": 298,\n                \"text1\": \"\"\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 56,\n            \"projectKey\": \"PEP14\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2023-07-26T07:29:09.000+0000\",\n            \"modifiedDate\": \"2025-05-07T07:43:18.000+0000\",\n            \"createdBy\": 14,\n            \"modifiedBy\": 24,\n            \"fields\": {\n                \"projectKey\": \"PEP14\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"PEP Playground\",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 54,\n            \"projectKey\": \"PEP12\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2023-06-15T09:23:22.000+0000\",\n            \"modifiedDate\": \"2023-06-15T09:23:22.000+0000\",\n            \"createdBy\": 14,\n            \"modifiedBy\": 14,\n            \"fields\": {\n                \"projectKey\": \"PEP12\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Playground Example Project \",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 55,\n            \"projectKey\": \"PEP13\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2023-07-04T11:55:07.000+0000\",\n            \"modifiedDate\": \"2024-02-12T08:05:55.000+0000\",\n            \"createdBy\": 14,\n            \"modifiedBy\": 77,\n            \"fields\": {\n                \"projectKey\": \"PEP13\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Porsche eBike Performance\",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 63,\n            \"projectKey\": \"PORT\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2025-06-17T11:43:44.000+0000\",\n            \"modifiedDate\": \"2025-06-17T15:48:03.000+0000\",\n            \"createdBy\": 218,\n            \"modifiedBy\": 218,\n            \"fields\": {\n                \"projectKey\": \"PORT\",\n                \"statusId\": 297,\n                \"text1\": \"\",\n                \"name\": \"Portfolio\",\n                \"description\": \"This project is for portfolio, business, sales, marketing and legal requirements which will affect products and systems not only in PS 1 or Ride 60, but also future ones.\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 61,\n            \"projectKey\": \"Ride60\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2025-03-14T13:44:35.000+0000\",\n            \"modifiedDate\": \"2025-03-14T13:44:35.000+0000\",\n            \"createdBy\": 24,\n            \"modifiedBy\": 24,\n            \"fields\": {\n                \"projectKey\": \"Ride60\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Ride 60\",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 59,\n            \"projectKey\": \"PEP16\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2023-08-30T09:05:04.000+0000\",\n            \"modifiedDate\": \"2023-08-30T09:05:04.000+0000\",\n            \"createdBy\": 14,\n            \"modifiedBy\": 14,\n            \"fields\": {\n                \"projectKey\": \"PEP16\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Variant 3 of Playground Example Project \",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        },\n        {\n            \"id\": 58,\n            \"projectKey\": \"PEP15\",\n            \"parent\": 52,\n            \"isFolder\": false,\n            \"createdDate\": \"2023-08-28T09:05:57.000+0000\",\n            \"modifiedDate\": \"2023-08-28T09:05:57.000+0000\",\n            \"createdBy\": 14,\n            \"modifiedBy\": 14,\n            \"fields\": {\n                \"projectKey\": \"PEP15\",\n                \"statusId\": 298,\n                \"text1\": \"\",\n                \"name\": \"Variant Example of Playground no.2 Updated based on Example Project \",\n                \"description\": \"\",\n                \"projectGroup\": 296\n            },\n            \"type\": \"projects\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "2 - Get project tags",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}rest/latest/tags?project=55",
+					"host": [
+						"{{base_url}}rest"
+					],
+					"path": [
+						"latest",
+						"tags"
+					],
+					"query": [
+						{
+							"key": "project",
+							"value": "55"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}rest/latest/tags?project=55",
+							"host": [
+								"{{base_url}}rest"
+							],
+							"path": [
+								"latest",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "project",
+									"value": "55"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jul 2025 12:31:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1132"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "jamaFishTag",
+							"value": "{\"originHost\":\"jamacore-khfxu72x-ip-10-56-12-126\",\"originUUID\":\"d8d3c66d1e05447f\",\"tenantId\":null,\"breadCrumbDTOs\":[]}"
+						},
+						{
+							"key": "x-jama-node",
+							"value": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourServerTime=1751632289736; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourSessionExpiry=1751632289736; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, api_key"
+						},
+						{
+							"key": "sunset",
+							"value": "Fri, 22 May 2020 00:00:00 GMT"
+						},
+						{
+							"key": "x-sunset",
+							"value": "Fri, 22 May 2020 00:00:00 GMT"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"status\": \"OK\",\n        \"timestamp\": \"2025-07-04T12:31:29.779+0000\",\n        \"pageInfo\": {\n            \"startIndex\": 0,\n            \"resultCount\": 20,\n            \"totalResults\": 127\n        }\n    },\n    \"links\": {\n        \"data.project\": {\n            \"type\": \"projects\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/latest/projects/{data.project}\"\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"app_feature\",\n            \"project\": 55\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Digital\",\n            \"project\": 55\n        },\n        {\n            \"id\": 6,\n            \"name\": \"app_intro\",\n            \"project\": 55\n        },\n        {\n            \"id\": 7,\n            \"name\": \"remove\",\n            \"project\": 55\n        },\n        {\n            \"id\": 8,\n            \"name\": \"pmp1_positive\",\n            \"project\": 55\n        },\n        {\n            \"id\": 9,\n            \"name\": \"pmp1_negative\",\n            \"project\": 55\n        },\n        {\n            \"id\": 10,\n            \"name\": \"bat-esw-b2release\",\n            \"project\": 55\n        },\n        {\n            \"id\": 11,\n            \"name\": \"BatEsw-PorshceSys-B2Release\",\n            \"project\": 55\n        },\n        {\n            \"id\": 12,\n            \"name\": \"BatEsw-PorscheSys-C1Release\",\n            \"project\": 55\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Sample B\",\n            \"project\": 55\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Release 2.0\",\n            \"project\": 55\n        },\n        {\n            \"id\": 18,\n            \"name\": \"PS1\",\n            \"project\": 55\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Connectors\",\n            \"project\": 55\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Harness\",\n            \"project\": 55\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Connector\",\n            \"project\": 55\n        },\n        {\n            \"id\": 22,\n            \"name\": \"BCB-Advanced\",\n            \"project\": 55\n        },\n        {\n            \"id\": 23,\n            \"name\": \"FuSa\",\n            \"project\": 55\n        },\n        {\n            \"id\": 24,\n            \"name\": \"NFR\",\n            \"project\": 55\n        },\n        {\n            \"id\": 25,\n            \"name\": \"Compliance\",\n            \"project\": 55\n        },\n        {\n            \"id\": 26,\n            \"name\": \"Safety\",\n            \"project\": 55\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "3 - Get all projects",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//let jsonData = pm.response.json();\r",
+							"var jsonData = JSON.parse(responseBody);\r",
+							"\r",
+							"// Check if data exists and is an array before saving to environment variable\r",
+							"if (jsonData.data && Array.isArray(jsonData.data)) {\r",
+							"    pm.environment.set(\"projects\", JSON.stringify(jsonData.data));\r",
+							"    pm.environment.set(\"projectIndex\", 0);\r",
+							"} else {\r",
+							"    pm.environment.unset(\"projects\");\r",
+							"    pm.environment.unset(\"projectIndex\");\r",
+							"}\r",
+							"\r",
+							"projects=jsonData;\r",
+							"\r",
+							"console.log(jsonData);\r",
+							"console.log(projects);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}rest/latest/projects",
+					"host": [
+						"{{base_url}}rest"
+					],
+					"path": [
+						"latest",
+						"projects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}rest/latest/tags?project=55",
+							"host": [
+								"{{base_url}}rest"
+							],
+							"path": [
+								"latest",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "project",
+									"value": "55"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jul 2025 12:31:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1132"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "jamaFishTag",
+							"value": "{\"originHost\":\"jamacore-khfxu72x-ip-10-56-12-126\",\"originUUID\":\"d8d3c66d1e05447f\",\"tenantId\":null,\"breadCrumbDTOs\":[]}"
+						},
+						{
+							"key": "x-jama-node",
+							"value": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourServerTime=1751632289736; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourSessionExpiry=1751632289736; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, api_key"
+						},
+						{
+							"key": "sunset",
+							"value": "Fri, 22 May 2020 00:00:00 GMT"
+						},
+						{
+							"key": "x-sunset",
+							"value": "Fri, 22 May 2020 00:00:00 GMT"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"status\": \"OK\",\n        \"timestamp\": \"2025-07-04T12:31:29.779+0000\",\n        \"pageInfo\": {\n            \"startIndex\": 0,\n            \"resultCount\": 20,\n            \"totalResults\": 127\n        }\n    },\n    \"links\": {\n        \"data.project\": {\n            \"type\": \"projects\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/latest/projects/{data.project}\"\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"app_feature\",\n            \"project\": 55\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Digital\",\n            \"project\": 55\n        },\n        {\n            \"id\": 6,\n            \"name\": \"app_intro\",\n            \"project\": 55\n        },\n        {\n            \"id\": 7,\n            \"name\": \"remove\",\n            \"project\": 55\n        },\n        {\n            \"id\": 8,\n            \"name\": \"pmp1_positive\",\n            \"project\": 55\n        },\n        {\n            \"id\": 9,\n            \"name\": \"pmp1_negative\",\n            \"project\": 55\n        },\n        {\n            \"id\": 10,\n            \"name\": \"bat-esw-b2release\",\n            \"project\": 55\n        },\n        {\n            \"id\": 11,\n            \"name\": \"BatEsw-PorshceSys-B2Release\",\n            \"project\": 55\n        },\n        {\n            \"id\": 12,\n            \"name\": \"BatEsw-PorscheSys-C1Release\",\n            \"project\": 55\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Sample B\",\n            \"project\": 55\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Release 2.0\",\n            \"project\": 55\n        },\n        {\n            \"id\": 18,\n            \"name\": \"PS1\",\n            \"project\": 55\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Connectors\",\n            \"project\": 55\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Harness\",\n            \"project\": 55\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Connector\",\n            \"project\": 55\n        },\n        {\n            \"id\": 22,\n            \"name\": \"BCB-Advanced\",\n            \"project\": 55\n        },\n        {\n            \"id\": 23,\n            \"name\": \"FuSa\",\n            \"project\": 55\n        },\n        {\n            \"id\": 24,\n            \"name\": \"NFR\",\n            \"project\": 55\n        },\n        {\n            \"id\": 25,\n            \"name\": \"Compliance\",\n            \"project\": 55\n        },\n        {\n            \"id\": 26,\n            \"name\": \"Safety\",\n            \"project\": 55\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "4 - Get all TAGs IDs from all projects",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let projects = JSON.parse(pm.environment.get(\"projects\") || \"[]\");\r",
+							"let index = parseInt(pm.environment.get(\"projectIndex\") || \"0\");\r",
+							"if (projects.length > 0 && index < projects.length) {\r",
+							"    pm.environment.set(\"projectId\", projects[index].id);\r",
+							"    console.log(\"Using projectId:\", projects[index].id);\r",
+							"} else {\r",
+							"    pm.environment.set(\"projectId\", \"\");\r",
+							"    console.log(\"No valid projectId found.\");\r",
+							"    pm.execution.setNextRequest(null);\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}rest/latest/tags?project={{projectId}}",
+					"host": [
+						"{{base_url}}rest"
+					],
+					"path": [
+						"latest",
+						"tags"
+					],
+					"query": [
+						{
+							"key": "project",
+							"value": "{{projectId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 - Get all tickets with Tag Regression (id 133)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}rest/v1/tags/133/items",
+					"host": [
+						"{{base_url}}rest"
+					],
+					"path": [
+						"v1",
+						"tags",
+						"133",
+						"items"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://porscheebike.jamacloud.com/rest/v1/tags/133/items",
+							"protocol": "https",
+							"host": [
+								"porscheebike",
+								"jamacloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"v1",
+								"tags",
+								"133",
+								"items"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Jul 2025 08:52:44 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "jamaFishTag",
+							"value": "{\"originHost\":\"jamacore-khfxu72x-ip-10-56-10-70\",\"originUUID\":\"2f945c09145d40ee\",\"tenantId\":null,\"breadCrumbDTOs\":[]}"
+						},
+						{
+							"key": "x-jama-node",
+							"value": ""
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourServerTime=1751878364217; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "jamaContourSessionExpiry=1751878364217; Path=/; Secure; SameSite=Lax"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Accept, Authorization, api_key"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"status\": \"OK\",\n        \"timestamp\": \"2025-07-07T08:52:44.741+0000\",\n        \"pageInfo\": {\n            \"startIndex\": 0,\n            \"resultCount\": 20,\n            \"totalResults\": 27\n        }\n    },\n    \"links\": {\n        \"data.createdBy\": {\n            \"type\": \"users\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/users/{data.createdBy}\"\n        },\n        \"data.lock.lockedBy\": {\n            \"type\": \"users\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/users/{data.lock.lockedBy}\"\n        },\n        \"data.modifiedBy\": {\n            \"type\": \"users\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/users/{data.modifiedBy}\"\n        },\n        \"data.fields.assignedTo\": {\n            \"type\": \"users\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/users/{data.fields.assignedTo}\"\n        },\n        \"data.fields.release_priority$152\": {\n            \"type\": \"picklistoptions\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/picklistoptions/{data.fields.release_priority$152}\"\n        },\n        \"data.location.parent.item\": {\n            \"type\": \"items\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/items/{data.location.parent.item}\"\n        },\n        \"data.fields.status1$152\": {\n            \"type\": \"picklistoptions\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/picklistoptions/{data.fields.status1$152}\"\n        },\n        \"data.fields.verification_type$152\": {\n            \"type\": \"picklistoptions\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/picklistoptions/{data.fields.verification_type$152}\"\n        },\n        \"data.project\": {\n            \"type\": \"projects\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/projects/{data.project}\"\n        },\n        \"data.itemType\": {\n            \"type\": \"itemtypes\",\n            \"href\": \"https://porscheebike.jamacloud.com/rest/v1/itemtypes/{data.itemType}\"\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 31584,\n            \"documentKey\": \"PEP13-PROD_VRF-90\",\n            \"globalId\": \"GID-64069\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-10-14T12:28:21.000+0000\",\n            \"modifiedDate\": \"2025-06-25T12:17:42.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T12:17:42.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-90\",\n                \"globalId\": \"GID-64069\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] User Authentication - Warnings against incorrect email formats\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify that user gets warnings against incorrect email formats.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-89</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"rationale$152\": \"<p>X</p>\",\n                \"assignedTo\": 47,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter a character for email adress input</p>\\n\",\n                        \"expectedResult\": \"<p>Warning should come in red colour punto.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter a valid email with the accepted format: example@exeample.com</p>\\n\",\n                        \"expectedResult\": \"<p>Warning should disappear.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Leave email input box empty</p>\\n\",\n                        \"expectedResult\": \"<p>No warning shoud be available.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check Sign-in button after entering invalid email format and a random password.</p>\\n\",\n                        \"expectedResult\": \"<p>Sign in button should not be clickable.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter a valid email and one random password, check sign in button</p>\\n\",\n                        \"expectedResult\": \"<p>Sign in button must be clickable.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter invalid email and a random password, then correct email.</p>\\n\",\n                        \"expectedResult\": \"<p>1-) Signin should not be clickable in the first action</p>\\n\\n<p>2-) Signin should be clickable after correction</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Use domain names; com, org, net, info</p>\\n\",\n                        \"expectedResult\": \"<p>Each domain name should be accaptable</p>\\n\",\n                        \"notes\": \"<p>All them acceptable. This can be reviewed whether We will allow custom domain names or not.</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Use some other custom domain names&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p>For now should be acceptable.</p>\\n\",\n                        \"notes\": \"<p>All them acceptable. This can be reviewed whether We will allow custom domain names or not.</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Check maxium username length</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"<p>Too many characters can be texted. (Should there be a limit?)</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Check maximum password lenght</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"<p>Too many characters can be texted.(Should there be a limit?)</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Enter only a valid username and check sign in button</p>\\n\",\n                        \"expectedResult\": \"<p>Sign in button must not be clickable</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Leave username input box empty and enter a password</p>\\n\",\n                        \"expectedResult\": \"<p>Sign in button must not be clickable</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Start username with (-) dash mark</p>\\n\",\n                        \"expectedResult\": \"<p>Should not be allowed</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Start domain part with (-) dash mark</p>\\n\",\n                        \"expectedResult\": \"<p>Should not be allowed</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Start username with @ mark</p>\\n\",\n                        \"expectedResult\": \"<p>Should not be allowed</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter a valid email and then delete @</p>\\n\",\n                        \"expectedResult\": \"<p>Warning should come and sign in button must be passive again</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter a valid email and then delet punkt (.)</p>\\n\",\n                        \"expectedResult\": \"<p>Warning should come and sign in button must be passive again.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Leave username and password boxoes empty and check sign in button</p>\\n\",\n                        \"expectedResult\": \"<p>There must be no warning, sign in button must be passive.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 11,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 12\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 6,\n            \"location\": {\n                \"sortOrder\": 3,\n                \"globalSortOrder\": 2043931692,\n                \"sequence\": \"2.7.4.2.3.2.4\",\n                \"parent\": {\n                    \"item\": 29576\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T12:17:43.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 35152,\n            \"documentKey\": \"PEP13-PROD_VRF-94\",\n            \"globalId\": \"GID-65898\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-10-24T12:52:15.000+0000\",\n            \"modifiedDate\": \"2025-06-25T12:16:45.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T12:16:45.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-94\",\n                \"globalId\": \"GID-65898\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] User Authentication -  Login with \\\"Enter\\\" keyboard\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify Login with \\\"ENTER\\\" keyboard. User should be able to login by pressing ENTER keyboard.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-115</p>\\n\",\n                \"rationale$152\": \"<p>X</p>\",\n                \"assignedTo\": 47,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app</p>\\n\",\n                        \"expectedResult\": \"<p>App should be opened in succcess.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid dealer username and password and press \\\"ENTER\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>Login must succeed</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter invalid dealer username and password and press \\\"ENTER\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>Login attempt must be completed but&nbsp; fail.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid oem username and password and press \\\"ENTER\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>Login must succeed</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter invalid oem username and password and press \\\"ENTER\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>Login attempt must be completed but&nbsp; fail.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid admin username and password and press \\\"ENTER\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>Login must succeed</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter invalid admin username and password and press \\\"ENTER\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>Login attempt must be completed but&nbsp; fail.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 11,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 12\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 4,\n            \"location\": {\n                \"sortOrder\": 4,\n                \"globalSortOrder\": 2044168094,\n                \"sequence\": \"2.7.4.2.3.2.5\",\n                \"parent\": {\n                    \"item\": 29576\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T12:16:46.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 79639,\n            \"documentKey\": \"PEP13-PROD_VRF-194\",\n            \"globalId\": \"GID-86100\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-06-10T11:58:58.000+0000\",\n            \"modifiedDate\": \"2025-06-25T12:18:15.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T12:18:15.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-194\",\n                \"globalId\": \"GID-86100\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] User Authentication - Display User Name\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify user first and last name is displayed after login</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-384</p>\\n\",\n                \"assignedTo\": 47,\n                \"source$152\": \"<p>https://porsche-ep.atlassian.net/browse/TBX-384</p>\",\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Login with Dealer credentials</p>\\n\",\n                        \"expectedResult\": \"<p>App must display user name</p>\\n\",\n                        \"notes\": \"<p>dealer@porsche-ep.com</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Login with OEM credentials</p>\\n\",\n                        \"expectedResult\": \"<p>App must display user name</p>\\n\",\n                        \"notes\": \"<p>oem@porsche-ep.com</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Login with Admin credentials</p>\\n\",\n                        \"expectedResult\": \"<p>App must display user name</p>\\n\",\n                        \"notes\": \"<p>admin@porsche-ep.com</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Use custom login credentials</p>\\n\",\n                        \"expectedResult\": \"<p>App must display user name</p>\\n\",\n                        \"notes\": \"<p>emre.durak+dealer@porsche-ep.com</p>\\n\\n<p>Test123!</p>\\n\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 6,\n                    \"numNotRun\": 0,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 6\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 2,\n            \"location\": {\n                \"sortOrder\": 6,\n                \"globalSortOrder\": 2044405032,\n                \"sequence\": \"2.7.4.2.3.2.7\",\n                \"parent\": {\n                    \"item\": 29576\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T12:18:16.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 29759,\n            \"documentKey\": \"PEP13-PROD_VRF-83\",\n            \"globalId\": \"GID-63436\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-09-27T13:59:50.000+0000\",\n            \"modifiedDate\": \"2025-06-25T12:22:31.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T12:22:31.000+0000\",\n            \"createdBy\": 118,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-83\",\n                \"globalId\": \"GID-63436\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] User Authentication - Login/Logout as Dealer\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify Dealer can log out.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-92&nbsp;</p>\\n\",\n                \"rationale$152\": \"<p>X</p>\",\n                \"assignedTo\": 118,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open App</p>\\n\",\n                        \"expectedResult\": \"<p>Login UI must be visible in success.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid username for the email.</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"<p>Test Datas:</p>\\n\\n<p>dealer@porsche-ep.com</p>\\n\\n<p>&nbsp;</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid password and click login button.</p>\\n\",\n                        \"expectedResult\": \"<p>Logged in as Dealer.</p>\\n\",\n                        \"notes\": \"<p>Test Data:</p>\\n\\n<p>Test123!</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Click on profile icon</p>\\n\",\n                        \"expectedResult\": \"<p>User sign out button should be visible</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click on sign out button</p>\\n\",\n                        \"expectedResult\": \"<p>User should log out of Toolbox.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 10,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 11\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 12,\n            \"location\": {\n                \"sortOrder\": 0,\n                \"globalSortOrder\": 2044877300,\n                \"sequence\": \"2.7.4.2.3.3.1\",\n                \"parent\": {\n                    \"item\": 29758\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T12:22:32.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 53765,\n            \"documentKey\": \"PEP13-PROD_VRF-136\",\n            \"globalId\": \"GID-73259\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-02-21T15:11:26.000+0000\",\n            \"modifiedDate\": \"2025-06-25T12:22:51.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T12:22:51.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-136\",\n                \"globalId\": \"GID-73259\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] User Authentication - Login/Logout as OEM\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify OEM can log out.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-92&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"assignedTo\": 47,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open App</p>\\n\",\n                        \"expectedResult\": \"<p>Login UI must be visible in success.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid username for the email.</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"<p>Test Data</p>\\n\\n<p>oem@porsche-ep.com</p>\\n\\n<p>&nbsp;</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid password and click login button.</p>\\n\",\n                        \"expectedResult\": \"<p>Logged in as OEM.</p>\\n\",\n                        \"notes\": \"<p>Test Data:</p>\\n\\n<p>Test123!</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Click on profile icon</p>\\n\",\n                        \"expectedResult\": \"<p>User sign out button should be visible</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click on sign out button</p>\\n\",\n                        \"expectedResult\": \"<p>User should log out of Toolbox.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 5,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 6\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 6,\n            \"location\": {\n                \"sortOrder\": 1,\n                \"globalSortOrder\": 2045113702,\n                \"sequence\": \"2.7.4.2.3.3.2\",\n                \"parent\": {\n                    \"item\": 29758\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T12:22:51.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 53770,\n            \"documentKey\": \"PEP13-PROD_VRF-137\",\n            \"globalId\": \"GID-73260\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-02-21T15:13:47.000+0000\",\n            \"modifiedDate\": \"2025-06-25T12:23:09.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T12:23:09.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-137\",\n                \"globalId\": \"GID-73260\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] User Authentication - Login/Logout as Admin\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify OEM can log out.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-92&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"assignedTo\": 47,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open App</p>\\n\",\n                        \"expectedResult\": \"<p>Login UI must be visible in success.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid username for the email.</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"<p>Test Data:</p>\\n\\n<p>admin@porsche-ep.com</p>\\n\\n<p>&nbsp;</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Enter valid password and click login button.</p>\\n\",\n                        \"expectedResult\": \"<p>Logged in as OEM.</p>\\n\",\n                        \"notes\": \"<p>Test Data:</p>\\n\\n<p>Test123!</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Click on profile icon</p>\\n\",\n                        \"expectedResult\": \"<p>User sign out button should be visible</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click on sign out button</p>\\n\",\n                        \"expectedResult\": \"<p>User should log out of Toolbox.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 5,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 6\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 5,\n            \"location\": {\n                \"sortOrder\": 2,\n                \"globalSortOrder\": 2045350104,\n                \"sequence\": \"2.7.4.2.3.3.3\",\n                \"parent\": {\n                    \"item\": 29758\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T12:23:09.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 37147,\n            \"documentKey\": \"PEP13-PROD_VRF-98\",\n            \"globalId\": \"GID-66465\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-11-05T12:53:29.000+0000\",\n            \"modifiedDate\": \"2025-06-25T13:58:51.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T13:58:51.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-98\",\n                \"globalId\": \"GID-66465\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] Account Recovery - Resetting password before login\",\n                \"description\": \"<p>&nbsp;</p>\\n\\n<p><strong>Test Description:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Verify that user can reset password before login.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-104</p>\\n\",\n                \"assignedTo\": 47,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter username&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p>Username must be inputted in success</p>\\n\",\n                        \"notes\": \"<p>Test Data for username:</p>\\n\\n<p><a href=\\\"mailto:emre.durak+dealer@porsche-ep.com\\\" target=\\\"_blank\\\">emre.durak+dealer@porsche-ep.com</a></p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Click \\\"Forgot Password\\\" button.</p>\\n\",\n                        \"expectedResult\": \"<p>User must be in a new interface for Entering username for resetting password</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click send for \\\"reset password code\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>Send button must be clickable</p>\\n\\n<p>6 digit code must come to mail inbox</p>\\n\\n<p>Check for loading animation</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check mail inbox for reset code</p>\\n\",\n                        \"expectedResult\": \"<p>6 digit codes must come to mail inbox</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter 6 digit codes</p>\\n\",\n                        \"expectedResult\": \"<p>Codes should be entered in success</p>\\n\\n<p>Copy paste code must work</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click continue</p>\\n\",\n                        \"expectedResult\": \"<p>New password setting screen should come</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Enter new password</p>\\n\",\n                        \"expectedResult\": \"<p>User should be able to enter the new password.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click unhide/hide eye icon</p>\\n\",\n                        \"expectedResult\": \"<p>Pasword should be hidden or unhidden accordingly.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check password validations for each criteria: UpperCase, Lower Case, Digit, Speacial Character</p>\\n\",\n                        \"expectedResult\": \"<p>Once each condition is verified, each text for each criteria must be green.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click \\\"Set Password\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>New password must be set.</p>\\n\\n<p>A success message must be visible in Toolbox UI</p>\\n\\n<p>A verification email to the mail account must come.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Login Toolbox with new password</p>\\n\",\n                        \"expectedResult\": \"<p>Password must be accepted.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 10,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 11\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 11,\n            \"location\": {\n                \"sortOrder\": 2,\n                \"globalSortOrder\": 2046532114,\n                \"sequence\": \"2.7.4.2.4.3\",\n                \"parent\": {\n                    \"item\": 27511\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T13:58:52.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 29913,\n            \"documentKey\": \"PEP13-PROD_VRF-85\",\n            \"globalId\": \"GID-63487\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-09-30T11:28:32.000+0000\",\n            \"modifiedDate\": \"2025-06-25T14:00:53.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T14:00:53.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-85\",\n                \"globalId\": \"GID-63487\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] System Testing - FR60 Component Restart\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify user can re-start Drive Unit, Battery and Display.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-60</p>\\n\",\n                \"assignedTo\": 118,\n                \"source$152\": \"<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-60</p>\",\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"FAILED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open App</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Connect to the FR60 bike</p>\\n\",\n                        \"expectedResult\": \"<p>Bike must be connected to the app</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Restart Drive Unit F4 and G4</p>\\n\",\n                        \"expectedResult\": \"<p>Drive Unit must be restarted</p>\\n\",\n                        \"notes\": \"<p>Use Motor F4 and Motor G4 for the test.</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Restart Battery E430 and E480</p>\\n\",\n                        \"expectedResult\": \"<p>Battery must be restarted</p>\\n\",\n                        \"notes\": \"<p>Use E430 and E480 for the test.</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Restart Display Control Hub and LED Hub</p>\\n\",\n                        \"expectedResult\": \"<p>Display must be restarted (All system must be off due to display disconnection)</p>\\n\\n<p>&nbsp;</p>\\n\",\n                        \"notes\": \"<p>Use LED hub and Control Hub for the test</p>\\n\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 4,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 2,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 7\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 9,\n            \"location\": {\n                \"sortOrder\": 0,\n                \"globalSortOrder\": 2047477722,\n                \"sequence\": \"2.7.4.2.5.1\",\n                \"parent\": {\n                    \"item\": 29910\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T14:00:54.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 41144,\n            \"documentKey\": \"PEP13-PROD_VRF-113\",\n            \"globalId\": \"GID-68052\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-11-26T13:44:08.000+0000\",\n            \"modifiedDate\": \"2025-06-25T14:01:11.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T14:01:11.000+0000\",\n            \"createdBy\": 118,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-113\",\n                \"globalId\": \"GID-68052\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] App Software - Software Version Display\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Verify PEP, OEM and Dealer can view the application software version in the settings page.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-116</p>\\n\",\n                \"assignedTo\": 118,\n                \"source$152\": \"<p><strong>Jira Link:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-116</p>\",\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"FAILED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app with Admin credenatials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Go to settings and check software version</p>\\n\",\n                        \"expectedResult\": \"<p>Software version must be visible and correct.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open app with Oem credenatials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Go to settings and check software version</p>\\n\",\n                        \"expectedResult\": \"<p>Software version must be visible and correct.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open app with dealer credentials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Go to settings and check software version</p>\\n\",\n                        \"expectedResult\": \"<p>Software version must be visible and correct.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 8,\n                    \"numNotRun\": 0,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 3,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 11\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 6,\n            \"location\": {\n                \"sortOrder\": 0,\n                \"globalSortOrder\": 2047950526,\n                \"sequence\": \"2.7.4.2.6.1\",\n                \"parent\": {\n                    \"item\": 38674\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T14:01:12.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 39876,\n            \"documentKey\": \"PEP13-PROD_VRF-103\",\n            \"globalId\": \"GID-67537\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-11-20T10:08:41.000+0000\",\n            \"modifiedDate\": \"2025-06-25T14:05:32.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T14:05:32.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-103\",\n                \"globalId\": \"GID-67537\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] App Settings - Temparature Unit\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Verify that PEP, OEM and Dealer can set prefered <a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16255&amp;t=8R7fMOwONed3dj0h-4\\\">temperature unit</a>&nbsp;in Celcius and Fahrenheit.</p>\\n\\n<p>​​​​​Application must set initial setting as “Celcius“&nbsp; &nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>&nbsp;</strong>https://porsche-ep.atlassian.net/jira/software/c/projects/TBX/boards/293?selectedIssue=TBX-132</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"rationale$152\": \"<p>X</p>\",\n                \"assignedTo\": 118,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app with admin credentials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"<p>admin@porsche-ep.com</p>\\n\\n<p>Test123!</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Go to setttings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Choose \\\"Celcius\\\" as system temparature</p>\\n\",\n                        \"expectedResult\": \"<p>Application temparature unit must be&nbsp; saved as \\\"Celcius\\\"</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Choose \\\"Fahrenheit\\\" as system temparature</p>\\n\",\n                        \"expectedResult\": \"<p>Application temparature unit must be saved as \\\"Fahrenheit\\\"</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open app with oem credentials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"<p>oem@porsche-ep.com</p>\\n\\n<p>Test123!</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Go to setttings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Choose \\\"Celcius\\\" as system temparature</p>\\n\",\n                        \"expectedResult\": \"<p>Application temparature unit must be&nbsp; saved as \\\"Celcius\\\"</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Choose \\\"Fahrenheit\\\" as system temparature</p>\\n\",\n                        \"expectedResult\": \"<p>Application temparature unit must be saved as \\\"Fahrenheit\\\"</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open app with dealer credentials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"<p>dealer@porsche-ep.com</p>\\n\\n<p>Test123!</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Go to setttings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Choose \\\"Celcius\\\" as system temparature</p>\\n\",\n                        \"expectedResult\": \"<p>Application temparature unit must be&nbsp; saved as \\\"Celcius\\\"</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Choose \\\"Fahrenheit\\\" as system temparature</p>\\n\",\n                        \"expectedResult\": \"<p>Application temparature unit must be saved as \\\"Fahrenheit\\\"</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 7,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 8\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 7,\n            \"location\": {\n                \"sortOrder\": 5,\n                \"globalSortOrder\": 2049605340,\n                \"sequence\": \"2.7.4.2.7.6\",\n                \"parent\": {\n                    \"item\": 39860\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T14:05:32.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 39888,\n            \"documentKey\": \"PEP13-PROD_VRF-104\",\n            \"globalId\": \"GID-67541\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-11-20T10:13:21.000+0000\",\n            \"modifiedDate\": \"2025-06-25T14:05:54.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T14:05:54.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-104\",\n                \"globalId\": \"GID-67541\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] App Settings - Measurement Unit\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Verify that user can&nbsp; set prefered <a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16249&amp;t=8R7fMOwONed3dj0h-4\\\">distance unit</a>&nbsp;in Metric and Imperial.</p>\\n\\n<p>​​​​​</p>\\n\\n<p><strong>Jira Ticket Link:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>https://porsche-ep.atlassian.net/jira/software/c/projects/TBX/boards/293?selectedIssue=TBX-132</p>\\n\",\n                \"assignedTo\": 118,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open Toolbox with admin credenatials and go to the settings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Assign measurement unit as \\\"Impearial\\\" and save</p>\\n\",\n                        \"expectedResult\": \"<p>Setting must be saved locally.&nbsp;&nbsp;</p>\\n\\n<p>Odometer value in the System Overview page must be displayed with \\\"Imperial\\\" unit</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Assign measuremnent unit as \\\"Metric\\\" and save</p>\\n\",\n                        \"expectedResult\": \"<p>Setting must be updated locally</p>\\n\\n<p>Odometer value in the System Overview page must be displayed with \\\"Metric\\\" unit</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open Toolbox with oem credenatials and go to the settings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Repeat from step 2 to step 3</p>\\n\",\n                        \"expectedResult\": \"<p>Predefined expected results must be achieved as a result of the test steps.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open Toolbox with dealer credenatials and go to the settings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Repeat from step 2 to step 3</p>\\n\",\n                        \"expectedResult\": \"<p>Predefined expected results must be achieved as a result of the test steps.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 10,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 11\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 9,\n            \"location\": {\n                \"sortOrder\": 6,\n                \"globalSortOrder\": 2049841742,\n                \"sequence\": \"2.7.4.2.7.7\",\n                \"parent\": {\n                    \"item\": 39860\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T14:05:55.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 39889,\n            \"documentKey\": \"PEP13-PROD_VRF-105\",\n            \"globalId\": \"GID-67542\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-11-20T10:20:21.000+0000\",\n            \"modifiedDate\": \"2025-06-25T14:06:22.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T14:06:22.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-105\",\n                \"globalId\": \"GID-67542\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] App Settings - Time/Day format\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Verify that PEP, OEM and Dealer can change&nbsp;<a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16447&amp;t=3Bc4TO03myfWnEdS-4\\\">time and date format</a>.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-132</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"rationale$152\": \"<p>X</p>\",\n                \"assignedTo\": 118,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open toolbox with admin credenatials and go to settings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Change date format to dd.mm.yyyy</p>\\n\",\n                        \"expectedResult\": \"<p>Must be updated</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Go to Product Information page and chech setting is saved succesfullly.</p>\\n\",\n                        \"expectedResult\": \"<p>Must be updated</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Change date format to mm.dd.yyyy</p>\\n\",\n                        \"expectedResult\": \"<p>Should be in dd.mm.yyyy format.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Go to Product Information page and chech setting is saved succesfullly.</p>\\n\",\n                        \"expectedResult\": \"<p>Should be in mm.dd.yyyy format.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Set time format as 12 hour and save</p>\\n\",\n                        \"expectedResult\": \"<p>Should be saved in the app.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Set time format as 24 hour and save</p>\\n\",\n                        \"expectedResult\": \"<p>Should be saved in the app.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open toolbox with dealer credenatials and go to settings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Repeat from the step 2 to&nbsp; step to step 7</p>\\n\",\n                        \"expectedResult\": \"<p>Steps must pass with the prdefined expected results.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open toolbox with oem credenatials and go to settings</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Repeat from the step 2 to&nbsp; step to step 7</p>\\n\",\n                        \"expectedResult\": \"<p>Steps must pass with the prdefined expected results.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 10,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 11\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 7,\n            \"location\": {\n                \"sortOrder\": 7,\n                \"globalSortOrder\": 2050078144,\n                \"sequence\": \"2.7.4.2.7.8\",\n                \"parent\": {\n                    \"item\": 39860\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T14:06:23.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 41673,\n            \"documentKey\": \"PEP13-PROD_VRF-114\",\n            \"globalId\": \"GID-68224\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-11-28T15:44:58.000+0000\",\n            \"modifiedDate\": \"2025-06-25T14:06:51.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T14:06:51.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-114\",\n                \"globalId\": \"GID-68224\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] App Settings - Save/Discard changes\",\n                \"description\": \"<p>&nbsp;</p>\\n\\n<p><strong>Test Description:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Verify PEP, Oem and Dealer can save and discard changes in the application settings.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-132</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"rationale$152\": \"<p>X</p>\",\n                \"assignedTo\": 118,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app with admin credentials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click Settings button at the bottom left of the screen</p>\\n\",\n                        \"expectedResult\": \"<p>User must be in Settings Screen which has Temparature, Language, Measurement, Time/Day options.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Change (temparature, distance unit, time and day format) in a row and check \\\"Save\\\" button&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p>Save button must be enabled after the change and must be clickable</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click \\\"Save\\\" button</p>\\n\",\n                        \"expectedResult\": \"<p>All changes must be saved</p>\\n\\n<p>One Success message should be visible for 3 seconds. Messages \\\"<strong>Changes succesfully saved\\\"</strong></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Change (temparature, distance unit of measurement) in a row and click \\\"Cancel\\\" button</p>\\n\",\n                        \"expectedResult\": \"<p>A pop up with two option \\\"Discard Changes\\\" and \\\"Keep Editing\\\" must be displayed.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click \\\"Discard Changes\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>Change must be reseted to the previous preference.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Instead of Step 5, click \\\"Keep Editing\\\"&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p>User must see the update change again with an option \\\"Save\\\"&nbsp; (User now can save the changes)</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open app with OEM credentials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Follow from step 2 till step 7</p>\\n\",\n                        \"expectedResult\": \"<p>Pre defined expected results should be achieved for each test step.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open app with Dealer credentials</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Follow from step 2 till step 7</p>\\n\",\n                        \"expectedResult\": \"<p>Pre defined expected results should be achieved for each test step.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 10,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 11\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 8,\n            \"location\": {\n                \"sortOrder\": 8,\n                \"globalSortOrder\": 2050314546,\n                \"sequence\": \"2.7.4.2.7.9\",\n                \"parent\": {\n                    \"item\": 39860\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T14:06:53.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 39892,\n            \"documentKey\": \"PEP13-PROD_VRF-106\",\n            \"globalId\": \"GID-67543\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2024-11-20T10:22:45.000+0000\",\n            \"modifiedDate\": \"2025-06-27T09:30:33.000+0000\",\n            \"lastActivityDate\": \"2025-06-27T09:30:33.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-106\",\n                \"globalId\": \"GID-67543\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] App Settings - App settings save\",\n                \"description\": \"<p>https://porsche-ep.atlassian.net/jira/software/c/projects/TBX/boards/293?selectedIssue=TBX-132</p>\\n\",\n                \"assignedTo\": 47,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open toolbox as OEM</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Change temparature unit, distance unit, time/date and save</p>\\n\",\n                        \"expectedResult\": \"<p>Success message must appear, changes must be saved locally.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Oepn toolbox as Dealer</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Change temparature unit, distance unit, time/date and save</p>\\n\",\n                        \"expectedResult\": \"<p>Success message must appear, changes must be saved locally.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open toolbox as Admin</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Change temparature unit, distance unit, time/date and save</p>\\n\",\n                        \"expectedResult\": \"<p>Success message must appear, changes must be saved locally.</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 10,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 11\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 5,\n            \"location\": {\n                \"sortOrder\": 10,\n                \"globalSortOrder\": 2050787350,\n                \"sequence\": \"2.7.4.2.7.11\",\n                \"parent\": {\n                    \"item\": 39860\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-27T09:30:34.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 48685,\n            \"documentKey\": \"PEP13-PROD_VRF-127\",\n            \"globalId\": \"GID-71436\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-01-20T15:15:47.000+0000\",\n            \"modifiedDate\": \"2025-06-25T14:07:32.000+0000\",\n            \"lastActivityDate\": \"2025-06-25T14:07:32.000+0000\",\n            \"createdBy\": 118,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-127\",\n                \"globalId\": \"GID-71436\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] App Settings - Setting defaults for Settings\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>​Verify&nbsp; that Application can set the defaults using the PC system defaults for region and language.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-151</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"assignedTo\": 118,\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p><strong>AC 1</strong></p>\\n\\n<p><span style=\\\"font-size:14px\\\">Default Criteria:</span></p>\\n\\n<p><span style=\\\"font-size:14px\\\">In case n<span style=\\\"font-family:Aptos,sans-serif\\\">o system default is detected or region is out of definition.</span></span></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Example:</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Syria region and Arabic lang</span></span></span></p>\\n\\n<p>&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:14px\\\"><span style=\\\"font-family:Aptos,sans-serif\\\">Application settings defaults using the PC system defaults for region and language:</span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:14px\\\"><span style=\\\"font-family:Aptos,sans-serif\\\">Steps:</span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:14px\\\"><span style=\\\"font-family:Aptos,sans-serif\\\">Select system Settings</span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:14px\\\"><span style=\\\"font-family:Aptos,sans-serif\\\">Time and language</span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:14px\\\"><span style=\\\"font-family:Aptos,sans-serif\\\">Language and region</span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\"><img alt=\\\"\\\" height=\\\"311\\\" src=\\\"https://porscheebike.jamacloud.com/attachment/2576/image-BRF4aJEz3R.png\\\" width=\\\"655\\\" /></span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-family:Aptos,sans-serif; font-size:14px\\\">Login to Toolbox</span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:14px\\\"><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p style=\\\"margin-bottom:11px\\\">Verify Language selection is same as PC system defaults</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><img alt=\\\"\\\" height=\\\"212\\\" src=\\\"https://porscheebike.jamacloud.com/attachment/2577/image-fk0tdkSPxU.png\\\" width=\\\"527\\\" /></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p><strong>AC 2,3,4,5</strong></p>\\n\\n<p><span lang=\\\"EN-GB\\\" style=\\\"font-size:12.0pt\\\"><span><span style=\\\"font-family:&quot;Aptos&quot;,sans-serif\\\">For PC language settings - English, German, Italian, French, Spanish, Dutch</span></span></span></p>\\n\\n<p>&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Test Steps:</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Login to Toolbox</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Toggle on should be enabled/on</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Save and Cancel shoud be disabled</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">For English should be 12 hours</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">For other languages like German, Italian, French, Spanish, Dutch the Toolbox Application should show the field selection as below:</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Tempature - Celcius</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Distance - Metric</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Time and Date format – 24 hour and dd.mm.yyy</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p style=\\\"margin-bottom:11px\\\">When Toggle is On</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Verify For English should be 12 hours</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Verify for other languages like German, Italian, French, Spanish, Dutch the Toolbox Application should show the field selection as below:</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Tempature - Celcius</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Distance - Metric</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Time and Date format – 24 hour and dd.mm.yyy</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\"><strong>English example below:</strong></span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><img alt=\\\"\\\" height=\\\"254\\\" src=\\\"https://porscheebike.jamacloud.com/attachment/2578/image-4DFjhsZlxY.png\\\" width=\\\"527\\\" /></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">AC – 6 a.</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ol style=\\\"list-style-type:lower-alpha; margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span><span style=\\\"font-family:Aptos,sans-serif\\\">Application must set default settings when the <a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16135&amp;t=M3BD183tpVgUuNHh-4\\\">system default toogle is ON</a>.</span></span></span></span></li>\\n</ol>\\n\\n<ul style=\\\"margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-left:56px; margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">English, German, Italian, French, Spanish, Dutch</span></span></span></li>\\n</ul>\\n\\n<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Test Steps:</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Login to Toolbox</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Toggle on should be enabled/on</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Save and Cancel shoud be disabled</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">For English should be 12 hours</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">For other languages like German, Italian, French, Spanish, Dutch the Toolbox Application should show the selection as below:</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Tempature - Celcius</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Distance - Metric</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Time and Date format – 24 hour and dd.mm.yyy</span></span></span></p>\\n\",\n                        \"expectedResult\": \"<p style=\\\"margin-bottom:11px\\\">When Toggle is On&nbsp;<a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16135&amp;t=M3BD183tpVgUuNHh-4\\\">system default toogle is ON</a>.</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Verify For English should be 12 hours</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Verify for other languages like German, Italian, French, Spanish, Dutch the Toolbox Application should show the field selection as below:</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Tempature - Celcius</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Distance - Metric</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Time and Date format – 24 hour and dd.mm.yyy</span></span></span></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">AC 6. b</span></span></span></strong></p>\\n\\n<ol style=\\\"list-style-type:lower-alpha; margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span><span style=\\\"font-family:Aptos,sans-serif\\\">User must be able to edit the settings by switching the <a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16234&amp;t=Oo6bqGf1QUrCkGWs-4\\\">system default toogle to OFF</a>.</span></span></span></span></li>\\n</ol>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ul>\\n\\t<li style=\\\"margin-left:56px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">For English default settings – English language is enabled and all other languages are disabled in the dropdown language selection.</span></span></span></li>\\n\\t<li style=\\\"margin-left:56px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Temperature, Distance, Time and Date Format including drop down can be edited and saved when Toggle is off.</span></span></span></li>\\n\\t<li style=\\\"margin-left:56px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Save and Cancel buttons will only enables when user edits the selection.</span></span></span></li>\\n</ul>\\n\\n<p style=\\\"margin-left:96px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px; margin-left:96px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Test Steps:</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Login to Toolbox</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Toggle Off</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Edit Language, Temperature, Distance, Time and Format</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Save and Cancel Button enables and works</span></span></span></p>\\n\",\n                        \"expectedResult\": \"<p><a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16135&amp;t=M3BD183tpVgUuNHh-4\\\">system default toogle is ON</a>.</p>\\n\\n<p>Verify&nbsp;<span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Edit Language, Temperature, Distance, Time and Format</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Verify Save and Cancel Button enables and works</span></span></span></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><img alt=\\\"\\\" height=\\\"311\\\" src=\\\"https://porscheebike.jamacloud.com/attachment/2579/image-fqnTrtfusP.png\\\" width=\\\"527\\\" /></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">AC 6. c</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ol style=\\\"list-style-type:lower-alpha; margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span><span style=\\\"font-family:Aptos,sans-serif\\\">User must be able to save or cancel when he <a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16207&amp;t=2RwJT5wssf9oXc0n-4\\\">switches the system default toogle to OFF</a> <strong>and </strong>makes a change in any setting field.</span></span></span></span></li>\\n</ol>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ul style=\\\"margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-left:78px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Toggle off changes are saved or not saved functionality</span></span></span></li>\\n\\t<li style=\\\"margin-left:78px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Should be able to make changes in any setting field.</span></span></span></li>\\n\\t<li style=\\\"margin-left:78px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Keep editing should show the changed settings.</span></span></span></li>\\n\\t<li style=\\\"margin-left:78px; margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Discard changes should reset the previous selection and Save, Cancel button disabled.</span></span></span></li>\\n</ul>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Test Steps:</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Login to Toolbox</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Toggle Off</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Edit Language, Temperature, Distance, Time and Format</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Cancel button</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Unsaved Change dialog box should appear</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Clicking on Keep editing should bring back to Settings screen with the selection and also Save and Cancel button enabled</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Clicking on discard changes should show the previous selection and save and cancel button disabled to its original state</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Save button after editing the fields</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span lang=\\\"EN-GB\\\" style=\\\"font-size:12.0pt\\\"><span><span style=\\\"font-family:&quot;Aptos&quot;,sans-serif\\\">Verify Changes successfully saved message with save and cancel button getting disabled.</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p><span style=\\\"font-size:12pt\\\"><span><span><span style=\\\"font-family:Aptos,sans-serif\\\"><a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16207&amp;t=2RwJT5wssf9oXc0n-4\\\">switches the system default toogle to OFF</a></span></span></span></span></p>\\n\\n<p>&nbsp;</p>\\n\\n<p><span lang=\\\"EN-GB\\\" style=\\\"font-size:12.0pt\\\"><span><span style=\\\"font-family:&quot;Aptos&quot;,sans-serif\\\">Verify Changes successfully saved message with save and cancel button getting disabled.</span></span></span></p>\\n\\n<p>&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Cancel Button dialog box</span></span></span></p>\\n\\n<p><img alt=\\\"\\\" height=\\\"222\\\" src=\\\"https://porscheebike.jamacloud.com/attachment/2581/image-L559rHALJD.png\\\" width=\\\"527\\\" /></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Changes Saved</p>\\n\\n<p><img alt=\\\"\\\" height=\\\"334\\\" src=\\\"https://porscheebike.jamacloud.com/attachment/2582/image-13LNXOLIRT.png\\\" width=\\\"527\\\" /></p>\\n\\n<p>&nbsp;</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">AC 6. d</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ol style=\\\"list-style-type:lower-alpha; margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span><span style=\\\"font-family:Aptos,sans-serif\\\">Application must revert the default settings when<a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16135&amp;t=M3BD183tpVgUuNHh-4\\\"> system default toogle</a> <strong>switched </strong>to ON although there are unsaved settings.</span></span></span></span></li>\\n</ol>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ul style=\\\"margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-left:55px; margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">System to set PC default settings when the Toggle is On always though if there are any unsaved settings.</span></span></span></li>\\n</ul>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Test Steps:</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Login to Toolbox</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Toggle On</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Verify the PC default settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span><span style=\\\"font-family:Aptos,sans-serif\\\"><a href=\\\"https://www.figma.com/design/00a7RS7nHjuSl5CCA4n3w4/Settings?node-id=238-16135&amp;t=M3BD183tpVgUuNHh-4\\\">system default toogle</a></span></span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Verify PC </span></span></span><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">default settings of different language screen shot here.</span></span></span></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">AC 6. e</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ol style=\\\"list-style-type:lower-alpha; margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-bottom:11px; margin-left:8px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">User must be able to change screens when toogle is OFF but no change is done.</span></span></span></li>\\n</ol>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ul style=\\\"margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-left:55px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Toggle off and change/edit the settings to which ever user want it and save the settings.</span></span></span></li>\\n\\t<li style=\\\"margin-left:55px; margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">User should be move around to other pages in the Toolbox</span></span></span></li>\\n</ul>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Test Steps:</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Login to Toolbox</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Toggle off</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Edit settings with different selections</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Save</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on System Overview</span></span></span></p>\\n\",\n                        \"expectedResult\": \"<p>Verify&nbsp;<span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">User must be able to change screens when toogle is OFF</span></span></span></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">AC 6. i</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ol style=\\\"list-style-type:lower-alpha; margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-bottom:11px; margin-left:8px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Application must show that toogle is ON and defaults are set when user returns back to settings.</span></span></span></li>\\n</ol>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ul style=\\\"margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-left:56px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Toggle off and change/edit the settings, save, move around to different pages performance other actions.</span></span></span></li>\\n\\t<li style=\\\"margin-left:56px; margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">User should be able to see defaults settings when returns back to the default settings.</span></span></span></li>\\n</ul>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Test Steps:</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Login to Toolbox</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Toggle off</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Edit settings with different selections</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Save</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on System Overview</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Select Toggle On</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">User should be able to see PC defaults settings when returns back to the settings page.</span></span></span></p>\\n\",\n                        \"expectedResult\": \"<p>Verify U<span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">ser should be able to see defaults settings when returns back to the default settings.</span></span></span></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\"><strong>AC 7</strong> User must have “English“ language as set on initial launch if the user system language is not defined in the application.</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\">&nbsp;</p>\\n\\n<ul style=\\\"margin-bottom:11px\\\">\\n\\t<li style=\\\"margin-left:56px; margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">English language selection to be made when the PC settings language is not defined within the application. Example: Chinese, Syria etc.</span></span></span></li>\\n</ul>\\n\\n<p style=\\\"margin-bottom:11px\\\"><strong><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Test Steps:</span></span></span></strong></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Select system Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Time and language</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Language and region</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Login to Toolbox</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Click on Settings</span></span></span></p>\\n\\n<p style=\\\"margin-bottom:11px\\\"><span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">Verify the English language selection is made.</span></span></span></p>\\n\",\n                        \"expectedResult\": \"<p>Verify&nbsp;<span style=\\\"font-size:12pt\\\"><span><span style=\\\"font-family:Aptos,sans-serif\\\">English language selection to be made when the PC settings language is not defined within the application.</span></span></span></p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 3,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 4\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 10,\n            \"location\": {\n                \"sortOrder\": 11,\n                \"globalSortOrder\": 2051023752,\n                \"sequence\": \"2.7.4.2.7.12\",\n                \"parent\": {\n                    \"item\": 39860\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-25T14:07:33.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 47856,\n            \"documentKey\": \"PEP13-PROD_VRF-124\",\n            \"globalId\": \"GID-71022\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-01-16T16:49:07.000+0000\",\n            \"modifiedDate\": \"2025-05-08T08:56:40.000+0000\",\n            \"lastActivityDate\": \"2025-06-27T09:33:43.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-124\",\n                \"globalId\": \"GID-71022\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] Firmware Update -  FR60 Firmware Update Status\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Verify user can see if the firmware is up to date/or not for Fazua Ride 60 system.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-39</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"assignedTo\": 47,\n                \"source$152\": \"<p><strong>Jira Link:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-39</p>\",\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 654,\n                \"testCaseStatus\": \"FAILED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app&nbsp;</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Connect to FR60 system which has the older/not uptodate firmware</p>\\n\",\n                        \"expectedResult\": \"<p>App must detect and show the bike connection.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check topbar for firmware update status</p>\\n\",\n                        \"expectedResult\": \"<p>User must be informed in the <a href=\\\"https://www.figma.com/design/8jMwOsK4K2VckTBq0HtqHz/System-overview?node-id=6452-83145&amp;t=KMMecq3NOQOOx99n-4\\\">topbar </a>if there is a new firmware update available for Fazua Ride 60 system.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check system firmware version in System Overview</p>\\n\",\n                        \"expectedResult\": \"<p>User must be informed in the <a href=\\\"https://www.figma.com/design/8jMwOsK4K2VckTBq0HtqHz/System-overview?node-id=6452-83056&amp;t=KMMecq3NOQOOx99n-4\\\">topbar </a>if the existing firmware is the latest one available for Fazua Ride 60 system.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check \\\"Update\\\" button on the top right of the top bar.</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to view&nbsp;&nbsp;<a href=\\\"https://www.figma.com/design/nWRkR2TADpL6ZlNuTKgcnu/Firmware-update?node-id=4795-14367&amp;t=aRIxXjbSwrjlDPPl-4\\\">“Update Now“</a> button&nbsp;</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click \\\"Update\\\" button&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to click&nbsp;&nbsp;<a href=\\\"https://www.figma.com/design/nWRkR2TADpL6ZlNuTKgcnu/Firmware-update?node-id=4795-14367&amp;t=aRIxXjbSwrjlDPPl-4\\\">“Update Now“</a> button&nbsp;</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Update the FR60 firmware to the latest firmware by using Legacy Toolbox 2.22 Official Superuser version&nbsp;</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open app and connect to the bike again.</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check firmware upate status in top bar.</p>\\n\",\n                        \"expectedResult\": \"<p>User must see firmware update status defined as \\\"Firmware is uptodate\\\"</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check firmware update status in system firmware version (in system overview)</p>\\n\",\n                        \"expectedResult\": \"<p>User must see firmware update status in System Overview page on System Firmware version as \\\"Uptodate\\\"</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 5,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 2,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 8\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 8,\n            \"location\": {\n                \"sortOrder\": 4,\n                \"globalSortOrder\": 2052442164,\n                \"sequence\": \"2.7.4.2.8.5\",\n                \"parent\": {\n                    \"item\": 42657\n                }\n            },\n            \"lock\": {\n                \"locked\": true,\n                \"lastLockedDate\": \"2025-06-27T09:33:38.000+0000\",\n                \"lockedBy\": 47\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 69494,\n            \"documentKey\": \"PEP13-PROD_VRF-176\",\n            \"globalId\": \"GID-79688\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-05-07T13:07:11.000+0000\",\n            \"modifiedDate\": \"2025-06-27T09:43:13.000+0000\",\n            \"lastActivityDate\": \"2025-06-27T09:43:13.000+0000\",\n            \"createdBy\": 47,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-176\",\n                \"globalId\": \"GID-79688\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] Firmware Update - Actual Release Notes for FR60 Firmware\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify user can view actual FR60 Release notes during the Firmware Update process</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-184</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"assignedTo\": 47,\n                \"source$152\": \"<p>https://porsche-ep.atlassian.net/browse/TBX-184</p>\",\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 656,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open app</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Connect to the the FR60 system (Pre-Condition: Bike has downgraded Fazua firmware)</p>\\n\",\n                        \"expectedResult\": \"\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Start firmware update process</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to view the Release Notes in \\\"What's new\\\" section</p>\\n\\n<p>Section must be expandable</p>\\n\\n<p>User must view the Release Notes from the Fazua Website --&gt;&nbsp;<a href=\\\"https://fazua.com/de/support/help-center/firmware/\\\">FAZUA - FAZUA Firmware</a></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Go on with Update Process:</p>\\n\\n<p>- Click Start</p>\\n\\n<p>- Start again</p>\\n\",\n                        \"expectedResult\": \"<p>User must still be able to see the Release Notes&nbsp;</p>\\n\\n<p>Section must be expandable</p>\\n\\n<p>User must view the Release Notes from the Fazua Website --&gt;&nbsp;<a href=\\\"https://fazua.com/de/support/help-center/firmware/\\\">FAZUA - FAZUA Firmware</a></p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 3,\n                    \"numNotRun\": 0,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 3\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 3,\n            \"location\": {\n                \"sortOrder\": 8,\n                \"globalSortOrder\": 2053387772,\n                \"sequence\": \"2.7.4.2.8.9\",\n                \"parent\": {\n                    \"item\": 42657\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-27T09:43:14.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 79366,\n            \"documentKey\": \"PEP13-PROD_VRF-192\",\n            \"globalId\": \"GID-86008\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-06-06T12:40:53.000+0000\",\n            \"modifiedDate\": \"2025-06-30T10:38:16.000+0000\",\n            \"lastActivityDate\": \"2025-06-30T10:38:16.000+0000\",\n            \"createdBy\": 118,\n            \"modifiedBy\": 118,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-192\",\n                \"globalId\": \"GID-86008\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] Firmware Update - [R60] View actual error messages on firmware update failure\",\n                \"description\": \"<p>Verify&nbsp;[R60] View actual error messages on firmware update failure</p>\\n\",\n                \"assignedTo\": 118,\n                \"source$152\": \"<p>https://porsche-ep.atlassian.net/browse/TBX-195</p>\",\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 654,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>Open Legacy App</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to open legacy app</p>\\n\",\n                        \"notes\": \"<p><strong>Steps to Downgrade Firmware:</strong></p>\\n\\n<p>Login to Legacy as super user</p>\\n\\n<p>Click on Firmware update</p>\\n\\n<p>Upload the appropriate bundle (can be found in Confluence)</p>\\n\\n<p>Go back to Toolbox App</p>\\n\\n<p>Firmware Update is enabled</p>\\n\\n<p>Click on Firmware Update</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Downgrade the firmware</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to downgrade the firmware</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Login to Toolbox App</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to open Toolbox app</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click on Update Firmware</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to start Firmware update</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click on Start update</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to see the Firmware update progress</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Disconnect \\\"drive unit\\\" after 20% update</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to disconnect drive unit after 20% update</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check \\\"An error occured Please check the Update Quickfixes below and try again.\\\" short info</p>\\n\",\n                        \"expectedResult\": \"<p>User must view the <a href=\\\"https://www.figma.com/design/nWRkR2TADpL6ZlNuTKgcnu/Firmware-update?node-id=6727-44687&amp;t=pn2BwqTo86InDWYZ-4\\\">failed status</a> with short info</p>\\n\",\n                        \"notes\": \"<p>Additional Note for Retesting:&nbsp;</p>\\n\\n<p>Percentage must be gone with the wind.</p>\\n\\n<p>Failed label must be 'Update failed'</p>\\n\\n<p>Product column must show the products as shown in System Overview.</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Check for the error messages per product/s</p>\\n\\n<p>\\\"drive unit\\\"</p>\\n\",\n                        \"expectedResult\": \"<p>User must view the error message for \\\"<a href=\\\"https://www.figma.com/design/nWRkR2TADpL6ZlNuTKgcnu/Firmware-update?node-id=6727-44560&amp;t=pn2BwqTo86InDWYZ-4\\\">error messages</a>\\\" per product after update process is complete (not successful)</p>\\n\",\n                        \"notes\": \"<p><strong>Note:</strong>&nbsp;</p>\\n\\n<p>1. The correctness of the error message will be checked in future stories.</p>\\n\\n<p><strong>2.</strong> This story is only for the view error messages on firmwae update fialure but the verifying each error messages correctness will be part of turture stories</p>\\n\\n<p><strong>3.</strong>&nbsp;Source of Error Code Table ---&gt; <a href=\\\"https://porsche-ep.atlassian.net/wiki/spaces/SD/pages/2583560205/31XXXX+Ride60+Firmware+Update+Process\\\">31XXXX Ride60 Firmware Update Process</a>&nbsp;is pulled to generate \\\"error messages\\\"</p>\\n\\n<p><strong>Error Section Columns includes:</strong></p>\\n\\n<p>Severity, Code, Products,Description and Cause, Solution</p>\\n\\n<p>&nbsp;</p>\\n\"\n                    },\n                    {\n                        \"action\": \"<p>Click on the \\\"Icon\\\" to Check error messages can be expanded and collapsed</p>\\n\\n<p>For both single errors and multiple errors</p>\\n\",\n                        \"expectedResult\": \"<p>User must be also able to <a href=\\\"https://www.figma.com/design/nWRkR2TADpL6ZlNuTKgcnu/Firmware-update?node-id=6727-44814&amp;t=pn2BwqTo86InDWYZ-4\\\">expand multiple errors </a>at the same time</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Click on Expand</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to see <a href=\\\"https://www.figma.com/design/nWRkR2TADpL6ZlNuTKgcnu/Firmware-update?node-id=6727-44717&amp;t=pn2BwqTo86InDWYZ-4\\\">cause and solution</a> if expend the error</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Check their is no quick fix section</p>\\n\",\n                        \"expectedResult\": \"<p>User <strong>must not</strong> view the general quick fixes section</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Follow the test steps 1 to 11</p>\\n\\n<p>Disconnect \\\"USB\\\" from the bike set up after 20% update</p>\\n\",\n                        \"expectedResult\": \"<p>User must be able to disconnect USB after 20% update</p>\\n\",\n                        \"notes\": \"<p><strong>Note: </strong>All scenarios from Error code Table cannot be checked due to the testing and hardware dependency, will need to be taken up in future stories.</p>\\n\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 3,\n                    \"numNotRun\": 0,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 3\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 2,\n            \"location\": {\n                \"sortOrder\": 11,\n                \"globalSortOrder\": 2053625247,\n                \"sequence\": \"2.7.4.2.8.12\",\n                \"parent\": {\n                    \"item\": 42657\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-30T10:38:17.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 47625,\n            \"documentKey\": \"PEP13-PROD_VRF-122\",\n            \"globalId\": \"GID-70896\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-01-15T15:40:38.000+0000\",\n            \"modifiedDate\": \"2025-04-04T13:57:13.000+0000\",\n            \"lastActivityDate\": \"2025-06-27T09:57:43.000+0000\",\n            \"createdBy\": 118,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-122\",\n                \"globalId\": \"GID-70896\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] Responsive User Interface - Support for various screen sizes\",\n                \"description\": \"<p><strong>Test Description:</strong></p>\\n\\n<p>Verify app supports various screen sizes</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-114</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                \"assignedTo\": 118,\n                \"source$152\": \"<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-114</p>\\n\\n<p>&nbsp;</p>\",\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 654,\n                \"testCaseStatus\": \"FAILED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>a. Go to system settngs&nbsp; to change various display resolutions</p>\\n\\n<p>b. Use snipping tool to measure the display sizes</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to do testing for different window sizes</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open app</p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to open toolbox</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Login with different user accounts</p>\\n\\n<p>OEM</p>\\n\\n<p>Dealer</p>\\n\\n<p>Admin</p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to login with different user accounts</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>User makes the window size is&nbsp;<strong>less than and or</strong> <strong>equal to 1439px</strong></p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to see the collapsed menu with&nbsp;<strong>less than and or</strong> <strong>equal to 1439px only.</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p><a href=\\\"https://www.figma.com/design/8jMwOsK4K2VckTBq0HtqHz/System-overview?node-id=4692-36443&amp;t=Ei2U8FkfZcuuCEBW-4\\\">collapsed menu</a></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>User tries to expand the collapsed menu when the window size is&nbsp;<strong>less than and or</strong> <strong>equal to 1439px</strong>.&nbsp;</p>\\n\",\n                        \"expectedResult\": \"<p>Should not be able to expand the collapsed menu with&nbsp;&nbsp;<strong>less than and or</strong> <strong>equal to 1439px</strong>.&nbsp;</p>\\n\\n<p><a href=\\\"https://www.figma.com/design/8jMwOsK4K2VckTBq0HtqHz/System-overview?node-id=4692-36443&amp;t=Ei2U8FkfZcuuCEBW-4\\\">collapsed menu</a></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open the application - set the screen resolution to&nbsp;<strong>1300px x 768px&nbsp;</strong></p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to see the app running in full screen.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open the application&nbsp; set the screen resolution to 1920px x 1080px</p>\\n\",\n                        \"expectedResult\": \"<p><strong>Should be able to see the app running in full screen.</strong></p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open the application set the screen resolution to 1280px x 720px</p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to see the app running in full screen.</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>On application start up make&nbsp;<strong>1920px x 1080px screen resolution</strong></p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to see&nbsp;app is running in <strong>1920px x 1080px</strong>&nbsp;</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p><strong>On application start up and make screen resolution bigger than&nbsp;</strong>1920px x 1080px</p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to see&nbsp;app is running in <strong>1920px x 1080px</strong>&nbsp;</p>\\n\",\n                        \"notes\": \"<p>i.e. if option available for&nbsp; bigger than1920 px x1080px</p>\\n\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 7,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 2,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 10\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 7,\n            \"location\": {\n                \"sortOrder\": 0,\n                \"globalSortOrder\": 2054096978,\n                \"sequence\": \"2.7.4.2.9.1\",\n                \"parent\": {\n                    \"item\": 47539\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-27T15:47:15.000+0000\"\n            },\n            \"type\": \"items\"\n        },\n        {\n            \"id\": 47628,\n            \"documentKey\": \"PEP13-PROD_VRF-123\",\n            \"globalId\": \"GID-70897\",\n            \"itemType\": 152,\n            \"project\": 55,\n            \"createdDate\": \"2025-01-15T15:46:55.000+0000\",\n            \"modifiedDate\": \"2025-03-14T09:10:12.000+0000\",\n            \"lastActivityDate\": \"2025-06-27T09:57:55.000+0000\",\n            \"createdBy\": 118,\n            \"modifiedBy\": 47,\n            \"fields\": {\n                \"documentKey\": \"PEP13-PROD_VRF-123\",\n                \"globalId\": \"GID-70897\",\n                \"status1$152\": 292,\n                \"name\": \"[TC] Responsive User Interface - Minimum Resolution\",\n                \"description\": \"<p>&nbsp;</p>\\n\\n<p><strong>Test Description:</strong></p>\\n\\n<p>&nbsp;</p>\\n\\n<p>Verify Minimum resolution for app is 1300px x 768px</p>\\n\\n<p>&nbsp;</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><strong>Jira Link:</strong></p>\\n\\n<p>https://porsche-ep.atlassian.net/browse/TBX-114</p>\\n\",\n                \"assignedTo\": 118,\n                \"source$152\": \"<p><strong>https://porsche-ep.atlassian.net/browse/TBX-114</strong></p>\",\n                \"release_priority$152\": 301,\n                \"verification_type$152\": 654,\n                \"testCaseStatus\": \"PASSED\",\n                \"testCaseSteps\": [\n                    {\n                        \"action\": \"<p>For all users</p>\\n\\n<p>Go to settings -- &gt; Display to change the resolution</p>\\n\\n<p>Use windows snipping tool and paste in paint to verify the windows sizes.</p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to do for testing the windows size</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Open Toolbox</p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to open Toolbox 3.0</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Verify the window size can be made to&nbsp;<strong>1300px x 768px</strong></p>\\n\",\n                        \"expectedResult\": \"<p>Should be able to size and re-size to 1300px x 768px</p>\\n\\n<p>&nbsp;</p>\\n\\n<p><a href=\\\"https://www.figma.com/design/8jMwOsK4K2VckTBq0HtqHz/System-overview?node-id=4692-36331&amp;t=flMbJvzizDTIKhz4-4\\\">Resolutions in design</a></p>\\n\\n<p>&nbsp;</p>\\n\",\n                        \"notes\": \"\"\n                    },\n                    {\n                        \"action\": \"<p>Verify the window size can not be made below 1300px x 768px</p>\\n\",\n                        \"expectedResult\": \"<p>Should not be able to re-size below 1300px x 768px</p>\\n\",\n                        \"notes\": \"\"\n                    }\n                ],\n                \"testRunResults\": {\n                    \"id\": 0,\n                    \"numPassed\": 9,\n                    \"numNotRun\": 1,\n                    \"numInProgress\": 0,\n                    \"numFailed\": 0,\n                    \"numBlocked\": 0,\n                    \"numNotApplicable\": 0,\n                    \"numTotalRuns\": 10\n                }\n            },\n            \"resources\": {\n                \"self\": {\n                    \"allowed\": [\n                        \"GET\",\n                        \"PUT\",\n                        \"PATCH\",\n                        \"DELETE\"\n                    ]\n                }\n            },\n            \"version\": 7,\n            \"location\": {\n                \"sortOrder\": 1,\n                \"globalSortOrder\": 2054333380,\n                \"sequence\": \"2.7.4.2.9.2\",\n                \"parent\": {\n                    \"item\": 47539\n                }\n            },\n            \"lock\": {\n                \"locked\": false,\n                \"lastLockedDate\": \"2025-06-27T15:47:13.000+0000\"\n            },\n            \"type\": \"items\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessTokenUrl",
+				"value": "{{base_url}}rest/oauth/token",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "{{base_url}}rest/oauth/token",
+				"type": "string"
+			},
+			{
+				"key": "refreshTokenUrl",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "JAMA-API-TOKEN",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{vault:client_secret_jama}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{vault:client_ID_JAMA}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
